@@ -38,9 +38,3 @@ This is a derived, post-implementation critical-path estimate only. It should be
 | BUFGCTRL | 1 | 32 | 3.13% |
 
 The recorded implementation uses no dedicated BRAM or DSP resources. This is a factual utilization observation; it does not by itself establish how the memory architecture will scale to larger images.
-
-## CV-appropriate wording
-
-> Implemented a 3×3 median-filter FPGA design in Vivado for 8-bit grayscale image processing. Post-implementation timing met a 100 MHz constraint with +7.054 ns WNS and zero failing endpoints, using 389 LUTs (0.61%) and 146 registers (0.12%) on the target device.
-
-If mentioning frequency headroom, use: “approximately 339.4 MHz estimated from the post-implementation critical path,” with the caveat above.
