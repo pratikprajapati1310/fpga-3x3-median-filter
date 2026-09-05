@@ -74,11 +74,3 @@ python python/compare_images.py reference_62x62.png results/filter_output.png
 3. Add [constraints/nexys_a7_100t.xdc](constraints/nexys_a7_100t.xdc).
 4. Confirm the top module and existing testbench configuration match your source.
 5. Run simulation, synthesis, and implementation as usual.
-
-## Evidence to add before publishing
-
-Place your own timing/utilization screenshots, waveform captures, and input/output comparison images in `images/` if you want visual project evidence. Do not add generated Vivado build directories; they are ignored by design.
-
-## License
-
-Add a license only if you have selected one for the project.
