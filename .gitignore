@@ -1,0 +1,43 @@
+# Vivado generated directories and files
+.Xil/
+.cache/
+.hw/
+.ip_user_files/
+.runs/
+.sim/
+.srcs/
+.gen/
+.venv/
+*.jou
+*.log
+*.str
+*.wdb
+*.wcfg
+*.xsim
+*.dcp
+*.bit
+*.bin
+*.mcs
+*.ltx
+*.rpt
+*.rpx
+*.pb
+*.html
+*.xml
+*.zip
+
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Optional local working data
+work/
+results/*.png
+results/*.txt
+!results/implementation_results.md
