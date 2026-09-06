@@ -67,10 +67,12 @@ python python/compare_images.py reference_62x62.png results/filter_output.png
 
 `prepare_image.py` converts an image to grayscale and resizes it to 64×64. `convert_back.py` expects whitespace- or comma-separated integer pixel values (0–255) and writes a grayscale image; 62×62 is its default size. `compare_images.py` calculates MSE and PSNR only when the two images have identical dimensions.
 
-## Vivado use
+## Running the project in Vivado
 
-1. Create or open the Vivado project for the Nexys A7-100T device used in your existing project.
-2. Add the copied RTL files and `tb/top1_TB.v`.
-3. Add [constraints/nexys_a7_100t.xdc](constraints/nexys_a7_100t.xdc).
-4. Confirm the top module and existing testbench configuration match your source.
-5. Run simulation, synthesis, and implementation as usual.
+1. Create a Vivado project targeting the Nexys A7-100T (`xc7a100tcsg324-1`).
+2. Add all Verilog files from the `src/` folder as Design Sources.
+3. Add the Verilog files from the `tb/` folder as Simulation Sources.
+4. Add `constraints/nexys_a7_100t.xdc` from the `constraints/` folder.
+5. Set `top1` as the design top module and `top1_TB` as the simulation top module.
+6. Run behavioral simulation, synthesis, and implementation.
+7. 
