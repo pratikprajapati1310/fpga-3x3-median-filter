@@ -50,7 +50,6 @@ The exact RTL and testbench were not provided with this package, so they are int
 | `median9.v` | `src/median9.v` |
 | `top1_TB.v` | `tb/top1_TB.v` |
 
-The included `.gitkeep` placeholders only preserve the directories; replace them with the actual files. Add any additional RTL modules required by your design to `src/`.
 
 ## Image-flow utilities
 
@@ -74,5 +73,4 @@ python python/compare_images.py reference_62x62.png results/filter_output.png
 3. Add the Verilog files from the `tb/` folder as Simulation Sources.
 4. Add `constraints/nexys_a7_100t.xdc` from the `constraints/` folder.
 5. Set `top1` as the design top module and `top1_TB` as the simulation top module.
-6. Run behavioral simulation, synthesis, and implementation.
-7. 
+6. Run behavioral simulation, synthesis, and implementation. 
